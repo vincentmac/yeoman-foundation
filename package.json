@@ -1,0 +1,32 @@
+{
+  "name": "yeoman-foundation",
+  "version": "0.1.0",
+  "description": "Yeoman generator for Zurb Foundation based project",
+  "homepage": "https://github.com/vincentmac/yeoman-foundation",
+  "author": {
+    "name": "Vincent Mac",
+    "email": "vincent@vincentmac.com",
+    "url": "http://vincentmac.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vincentmac/yeoman-foundation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vincentmac/yeoman-foundation/issues",
+    "email": "vincent@vincentmac.com"
+  },
+  "dependencies": {},
+  "keywords": [
+    "yeoman",
+    "foundation",
+    "generator",
+    "cli",
+    "tool",
+    "development"
+  ],
+  "scripts": {
+    "install": "node install"
+  },
+  "readmeFilename": "README.md"
+}

@@ -1,0 +1,14 @@
+Description:
+  Yeoman generator to create a foundation (3.2.5) based project
+
+Example:
+  yeoman init foundation
+
+  This will create:
+    .
+    |-- .gitattributes
+    |-- .gitignore
+    |-- Gruntfile.js
+    |-- app
+    | ...
+    |-- package.json
