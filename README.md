@@ -15,7 +15,7 @@ You can install this generator globally via npm:
 
 `[sudo] npm install -g yeoman-foundation`
 
-I have only tested this on Mac OS X, but it should work on Windows and Linux. During a global npm install, the generator will get copied over to your global yeoman generator path:
+I have only tested this on Mac OS X, but it should work in Windows and other *nix environments. During a global npm install, the generator will get installed in your global `node_modules` directory, while a symlink to the foundation generator will be created in your global yeoman generators directory:
 
 `/usr/local/lib/node_modules/yeoman/node_modules/yeoman-generators/lib/generators/foundation/`
 

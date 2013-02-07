@@ -1,6 +1,7 @@
 {
   "name": "yeoman-foundation",
-  "version": "0.1.0",
+  "preferGlobal": true,
+  "version": "0.2.0",
   "description": "Yeoman generator for Zurb Foundation based project",
   "homepage": "https://github.com/vincentmac/yeoman-foundation",
   "author": {
@@ -10,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincentmac/yeoman-foundation.git"
+    "url": "git://github.com/vincentmac/yeoman-foundation.git"
   },
   "bugs": {
     "url": "https://github.com/vincentmac/yeoman-foundation/issues",
@@ -26,7 +27,9 @@
     "development"
   ],
   "scripts": {
-    "install": "node install"
+    "install": "node install",
+    "uninstall": "node uninstall"
   },
+  "license": "MIT",
   "readmeFilename": "README.md"
 }
