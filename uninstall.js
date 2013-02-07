@@ -26,7 +26,7 @@ yeoman = path.resolve(__dirname, '..', yeomanGeneratorPath);
 function unlinkPrevious() {
   fs.unlink(path.resolve(yeoman, 'foundation'), function(err) {
     if (err) return console.log('unlink error:', err);
-    return console.log('yeoman-foundation successfully unlinked from global generators\' directory.',
+    return console.log('yeoman-foundation successfully unlinked from global generators directory.',
       'Proceed with uninstall...');
   });
 }

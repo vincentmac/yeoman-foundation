@@ -21,7 +21,7 @@ Generator.prototype.installPackage = function installPackage() {
   var spawn = require('child_process').spawn
     , child;
 
-  console.log('Finished generating Foundation Scaffold.');
+  console.log('Finished generating Foundation scaffold.');
   console.log('Installing latest jQuery, Backbone, and Require.js...');
 
   child = spawn('yeoman', ['install', 'jquery', 'backbone', 'requirejs', '--save']);
@@ -36,7 +36,7 @@ Generator.prototype.installPackage = function installPackage() {
   });
 
   child.on('exit', function(code) {
-    console.log('install components complete:', code);
+    console.log('Latest components successfully installed.');
   });
 
 };
