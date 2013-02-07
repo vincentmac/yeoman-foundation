@@ -36,7 +36,7 @@ var fs =require('fs')
     console.log(exists ? "it's there" : "no yeoman or local install");
     if (exists) {
       // create symlink
-      fs.link(foundation, path.resolve(yeoman, 'foundation'), function(err) {
+      fs.symlink(foundation, path.resolve(yeoman, 'foundation'), 'dir', function(err) {
         if (err) console.log('error', err);
         console.log('successfully installed yeoman-foundation in', foundation);
         console.log('and created a link in ', yeoman);
