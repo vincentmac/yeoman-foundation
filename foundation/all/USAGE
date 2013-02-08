@@ -1,14 +1,61 @@
 Description:
-  Yeoman generator to create a foundation (3.2.5) based project
+  Yeoman generator to create a foundation based project
 
 Example:
   yeoman init foundation
 
   This will create:
     .
+    |-- app
+    |   |-- components
+    |   |   |-- backbone
+    |   |   |-- bootstrap
+    |   |   |-- jquery
+    |   |   |-- require-jade
+    |   |   |-- requirejs
+    |   |   |-- underscore
+    |   |
+    |   |-- images
+    |   |   |-- foundation
+    |   |
+    |   |-- javascripts
+    |   |   |-- collections
+    |   |   |-- models
+    |   |   |-- templates
+    |   |   |-- views
+    |   |   |-- script.js
+    |   |   |-- vendor
+    |   |       |-- foundation
+    |   |       |   |-- // foundation js files
+    |   |       |   |-- ...
+    |   |
+    |   |-- sass
+    |   |   |-- customization
+    |   |   |   |-- _settings.scss
+    |   |   |   |-- // additional customizations
+    |   |   |   |-- ...
+    |   |   |
+    |   |   |-- app.scss
+    |   |
+    |   |-- stylesheets
+    |   |   |-- app.css
+    |   |
+    |   |-- .htaccess
+    |   |-- 404.html
+    |   |-- config.rb
+    |   |-- favicon.ico
+    |   |-- humans.txt
+    |   |-- index.html
+    |   |-- MIT-LICENSE.text
+    |   |-- robots.txt
+    |
+    |-- test (mocha)
+    |   |-- ...
+    |
+    |-- .editorconfig
     |-- .gitattributes
     |-- .gitignore
+    |-- .jshintrc
+    |-- component.json
     |-- Gruntfile.js
-    |-- app
-    | ...
     |-- package.json

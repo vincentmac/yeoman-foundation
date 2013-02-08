@@ -21,10 +21,10 @@ Generator.prototype.installPackage = function installPackage() {
   var spawn = require('child_process').spawn
     , child;
 
-  console.log('Finished generating Foundation scaffold.');
-  console.log('Installing latest jQuery, Backbone, and Require.js...');
+  console.log('Finished generating foundation scaffold.');
+  console.log('Installing latest jQuery, Backbone, Require.js, and require-jade...');
 
-  child = spawn('yeoman', ['install', 'jquery', 'backbone', 'requirejs', '--save']);
+  child = spawn('yeoman', ['install', 'jquery', 'backbone', 'requirejs', 'require-jade', '--save']);
 
   child.stdout.setEncoding('utf8');
   child.stdout.on('data', function(data) {
