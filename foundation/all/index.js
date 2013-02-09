@@ -17,9 +17,16 @@ Generator.prototype.setupEnv = function setupEnv() {
   this.directory('.','.');
 };
 
-Generator.prototype.installPackage = function installPackage() {
+/**
+ * Install frontend components via yeoman/bower
+ */
+
+Generator.prototype.installComponents = function installComponents() {
   var spawn = require('child_process').spawn
-    , child;
+    , child
+    , cb;
+
+  cb = this.async();
 
   console.log('Finished generating foundation scaffold.');
   console.log('Installing latest jQuery, Backbone, Require.js, and require-jade...');
@@ -37,6 +44,7 @@ Generator.prototype.installPackage = function installPackage() {
 
   child.on('exit', function(code) {
     console.log('Latest components successfully installed.');
+    cb();
   });
 
 };
